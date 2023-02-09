@@ -1,0 +1,206 @@
+/* body {
+    background-color: #ffecec85;
+}
+
+.head {
+    border: 1px solid black;
+    background-color: #0f0812;
+    padding-top: 13px;
+    position: sticky;
+    top: 0;
+}
+
+.right {
+    color: white;
+    font-weight: bolder;
+    padding-left: 26%;
+}
+
+.logout {
+    padding-left: 40px;
+}
+
+
+
+.fa-solid {
+    padding-left: 10px;
+}
+
+.home {
+    padding-left: 30px;
+}
+
+.center {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 40%;
+}
+
+
+.profile {
+
+    width: 409px;
+}
+
+.flex {
+    display: flex;
+}
+
+.profile-detail {
+    margin-left: 32px;
+    padding-top: 65px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.placed-student {
+    padding: 70px 0px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+
+
+
+.new {
+    border: 2px solid black;
+
+    height: 25px;
+    width: 71px;
+    text-align: center;
+    padding-top: 7px;
+    background-color: blue;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 19px;
+
+    margin: 46px 12px;
+}
+
+.update {
+    margin: 24px 172px;
+
+}
+
+
+
+.announcement {
+    text-align: center;
+    color: white;
+    background-color: #0f0812;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+    padding-top: 18px;
+    margin-top: -4px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.announcement-detail {
+    font-size: 20px;
+    width: 100%;
+    height: 360px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.foot {
+    color: white;
+    background-color: #0f0812;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+    padding-top: 18px;
+    margin-top: -4px;
+
+}
+
+.footleft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    padding-right: 50px;
+}
+
+.nav-buttons {
+    padding-left: 50px;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a.dropdown-toggle {
+    color: White;
+    text-decoration: none;
+}
+
+.table-container {
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.profile_pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.carousel {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 780px) {
+    #profile {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 90vw;
+    }
+}
+
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+#summaryTable {
+    height: 300px;
+    overflow: hidden;
+}
+#summaryTable table {
+    animation: scroll infinite 15s;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

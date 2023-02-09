@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Placement Portal</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="admin2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">UMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#studentsTable">Student's List</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="./index.html" type="button" class="nav-item btn btn-danger">Sign Out </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="flex container" style="justify-content: space-between;" id="profile">
+
+        <div class="profile flex">
+            <img src="images/profile.jpg" alt="this is a picture of profile" class="profile_pic">
+
+
+            <div class="profile-detail">
+                <p>Name : Anand Singh</p>
+                <p>Reg no : 256432</p>
+
+            </div>
+        </div>
+        <div class="update flex">
+            <a href="#" class="new"> New</a>
+            <span class="placed-student">80% students of our university have got selected.....</span>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000"
+        data-wrap="true">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/placedimage.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/pi2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/placedimage.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <hr>
+
+
+
+
+    <div class="announcement">
+
+        <header>
+            Placement Announcement
+            <a href="#">(View All)</a>
+        </header>
+    </div>
+    <div class="announcement-detail">
+        <p>
+
+            <strong>Final Result of One-year Internship Drive by CONSULTADD INC TC.21096.2023.30623 </strong>
+            Heartiest Congratulations from Lovely Professional University to the following students selected through
+            One-year Internship Drive by<strong>CONSULTADD INC TC.21096.2023.30623</strong>
+
+            <br>
+
+            <strong>** 11903855 Isha Bhagat</strong>
+
+            <br>
+
+            <strong>** 11917446 Digar Patidar</strong>
+            <br>
+
+            <strong>Uploaded By:</strong><br>
+            Dr.H Pal Thethi<br>
+            Division of Career Services<br>
+        </p>
+        <hr>
+        <p>
+
+            <strong>
+                Final Result of One-year Internship Drive by EQUIRUS WEALTH TC.30343.2023.34159 </strong>
+            Heartiest Congratulations from Lovely Professional University to the following student selected through
+            One-year Internship Drive by<strong>EQUIRUS WEALTH TC.30343.2023.34159
+
+            </strong>
+
+            <br>
+
+            <strong>** 11911944 Gagan Yadavt</strong>
+
+            <br>
+
+            <strong>** 12019442 Anup Kumar</strong>
+            <br>
+
+            <strong>Uploaded By:</strong><br>
+            Dr.H Pal Thethi<br>
+            Division of Career Services<br>
+        </p>
+        <hr>
+        <p>
+            <strong> Reporting Schedule for the selection process of ASIAN PAINTS OC.48.2023.30597 </strong><br>
+            This is for the information of all the concerned that selection process of ASIAN PAINTS OC.48.2023.30597 is
+            scheduled as follows: <br>
+
+            Reporting Date: 07-10-2022<br>
+
+            Reporting Time: 9.00 AM<br>
+
+            Reporting Venue: Block 32-309 <br>
+
+            NOTES:<br>
+        <ol>
+
+
+            <li>Group discussion & PI will take place.</li>
+            <li>Students must be in formals (available in Uni Mall) otherwise action will be taken as per placement
+                misconduct. policy</li>
+
+            <li>It is Mandatory for the students to report at the campus to appear for the selection process.</li>
+            <li>Students should update their LPU Touch App, so that they can scan the barcode to mark their attendance.
+            </li>
+            <li>Students must bring a hard copy of their updated CV & two photographs.</li>
+            <li> Students must carry academic transcripts and government id both original and photocopy.Attachment:</li>
+        </ol>
+        <br>
+        Attachment:<br>
+        asian paints new.xls<br>
+        <strong>Uploaded By:</strong><br>
+        Dr.H Pal Thethi<br>
+        Division of Career Services
+        <hr>
+        <strong> Reporting Schedule for the selection process of POSTERITY CONSULTING OC.21265.2023.33062</strong><br>
+        This is for the information of all the concerned that selection process of POSTERITY CONSULTING
+        OC.21265.2023.33062 is scheduled as follows:<br>
+
+
+
+        Reporting Date: 07-10-2022<br>
+
+        Reporting Time: 9.00 AM<br>
+
+        Reporting Venue: Block 34-111<br>
+
+
+
+        NOTES:
+        <ol>
+
+            <li> Group discussion, Online test & Interview will take place after PPPT.</li>
+
+            <li> Each student must bring the laptop for the online test.</li>
+
+            <li>
+                Student must be in formals (available in Uni Mall) otherwise action will be taken as per placement
+                misconduct. policy</li>
+
+            <li>It is Mandatory for the students to report at the campus to appear for the selection process.</li>
+
+            <li> Students should update their LPU Touch App, so that they can scan the barcode to mark their attendance.
+            </li>
+
+            <li> Students must bring a hard copy of their updated CV & two photographs.</li>
+
+            <li> Students must carry academic transcripts and government id both original and photocopy.</li>
+            <br>
+            Attachment:<br>
+
+            1 POSTERITY.xls<br>
+            <strong> Uploaded By:</strong><br>
+            Dr.H Pal Thethi<br>
+            Division of Career Services<br>
+            <hr>
+            <strong>Notice for Lab Exemption</strong><br>
+            This is for the information of all the concerned that the computer labs are exempted for the online test of
+            EXL
+            SERVICES TC.11721.2023.30845 as per the following schedule:<br>
+
+            The labs are exempted on 07-10-2022 from 10 am to 1:00 pm<br>
+
+
+
+            Attachment:<br>
+            1 LAB EXEMPTION for EXL SERVICES.xls
+            <br>
+            <strong>Uploaded By:</strong><br>
+            Dr.H Pal Thethi<br>
+            Division of Career SERVICES
+            <hr>
+            <strong> Final Result of Full Term Internship Drive by NXTWAVE TC.30077.2023.33125</strong>
+            Heartiest Congratulations from Lovely Professional University to the following students selected through
+            Full
+            Term Internship Drive by<strong> NXTWAVE TC.30077.2023.33125</strong>
+
+            <br>
+
+            <strong> ** 12004285 Ayush Prasad</strong>
+
+            <br>
+
+            <strong> ** 12013199 Anisha Sharma</strong>
+            <br>
+            <strong> Uploaded By:</strong><br>
+            Dr.H Pal Thethi<br>
+            Division of Career SERVICES
+            <hr>
+            </p>
+
+    </div>
+    <div class="foot">
+        <div class="footleft flex">
+            <div class="nav-buttons">
+                <a href="#"><input type="submit" value="Previous "></a>
+                <a href="#"> <input type="submit" value="Next"></a>
+            </div>
+            <div class="item">item 1 to 6 out of 32</div>
+        </div>
+    </div>
+
+    <h3 class="text-center mt-5">Company Drives</h3>
+    <div class="table-container">
+        <table class="table text-center my-3" id="drivesTable">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Sl. No</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Drive Date</th>
+                    <th scope="col">Register By</th>
+                    <th scope="col">Job Profile</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop1">Create</button>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Amazon</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><a href="" type="button" class="btn btn-primary d-inline">Job Profile</a></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Amazon</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><a type="button" class="btn btn-primary d-inline">Job Profile</a></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Google</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><a type="button" class="btn btn-primary d-inline">Job Profile</a></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Alphabet Inc</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><a type="button" class="btn btn-primary d-inline">Job Profile</a></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>VMWare</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><a type="button" class="btn btn-primary d-inline">Job Profile</a></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Oracle</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><button type="button" class="btn btn-primary d-inline">Job Profile</button></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Bluestacks</td>
+                    <td>19/09/22</td>
+                    <td>30/09/22</td>
+                    <td><button type="button" class="btn btn-primary d-inline">Job Profile</button></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Create Drive -->
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>Hello!</h1>
+                    <div class="m-3">
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Company</label> -->
+                        <input type="email" class="form-control mt-3 mb-3" placeholder="Company" id="companyName">
+                        <input type="date" name="" id="driveDate" class="form-control mt-3 mb-3">
+                        <input type="date" name="" id="driveLastDate" class="form-control mt-3 mb-3">
+                        <input type="text" name="" id="jobProfileLink" class="form-control mt-3 mb-3">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="createDrive()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <table class="table text-center my-5">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Name</th>
+                                <th scope="col dropdown">
+                                    <span class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Domain
+                                    </span>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item" data-showDomain="">All</li>
+                                        <li class="dropdown-item" data-showDomain="Cyber">Cyber Security</li>
+                                        <li class="dropdown-item" data-showDomain="Data">Data Science</li>
+                                        <li class="dropdown-item" data-showDomain="SWE">Software Engineering</li>
+                                        <li class="dropdown-item" data-showDomain="Web">Web Development</li>
+                                    </ul>
+                                </th>
+                                <th scope="col">CGPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-domain="Cyber">
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""></th>
+                                <td>Aman</td>
+                                <td>Cyber Security</td>
+                                <td>7.7</td>
+                            </tr>
+                            <tr data-domain="Web">
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""></th>
+                                <td>Jacob</td>
+                                <td>Web Development</td>
+                                <td>8.1</td>
+                            </tr>
+                            <tr data-domain="Data">
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""></th>
+                                <td>Larry</td>
+                                <td>Data Science</td>
+                                <td>9.0</td>
+                            </tr>
+                            <tr data-domain="Data">
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""></th>
+                                <td>Page</td>
+                                <td>Data Science</td>
+                                <td>9.1</td>
+                            </tr>
+                            <tr data-domain="SWE">
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""></th>
+                                <td>Linus</td>
+                                <td>Software Engineer</td>
+                                <td>8.0</td>
+                            </tr>
+                            <tr data-domain="Web">
+                                <th scope="row"><input class="form-check-input" type="checkbox" value=""></th>
+                                <td>Ronit</td>
+                                <td>Web Development</td>
+                                <td>1.2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success btnRegister">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 class="text-center mt-5">Student's List</h3>
+
+    <div class="table-container">
+        <table class="table text-center my-3" id="studentsTable">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Sl. No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col dropdown">
+                        <span class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Domain
+                        </span>
+                        <ul class="dropdown-menu domains">
+                            <li class="dropdown-item" data-showDomain="">All</li>
+                            <li class="dropdown-item" data-showDomain="Cyber">Cyber Security</li>
+                            <li class="dropdown-item" data-showDomain="Data">Data Science</li>
+                            <li class="dropdown-item" data-showDomain="SWE">Software Engineering</li>
+                            <li class="dropdown-item" data-showDomain="Web">Web Development</li>
+                        </ul>
+                    </th>
+                    <th scope="col dropdown"> <span class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CGPA
+                        </span>
+                        <ul class="dropdown-menu CGPA">
+                            <li class="dropdown-item" data-showCGPA="9"> >= <span>9</span></li>
+                            <li class="dropdown-item" data-showCGPA="8"> >= <span>8</span></li>
+                            <li class="dropdown-item" data-showCGPA="7"> >= <span>7</span></li>
+                            <li class="dropdown-item" data-showCGPA="6"> >= <span>6</span></li>
+                            <li class="dropdown-item" data-showCGPA=""> >= <span>0</span></li>
+                        </ul>
+                    </th>
+                    <th scope="col">Block</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-domain="Cyber" data-CGPA="7.7">
+                    <th scope="row">1</th>
+                    <td>Aman</td>
+                    <td>Cyber Security</td>
+                    <td>7.7</td>
+                    <td><button type="button" class="btn btn-success d-inline">Unblock</button></td>
+                </tr>
+                <tr data-domain="Web" data-CGPA="8.1">
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Web Development</td>
+                    <td>8.1</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Block</button></td>
+                </tr>
+                <tr data-domain="Data" data-CGPA="9.0">
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>Data Science</td>
+                    <td>9.0</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Block</button></td>
+                </tr>
+                <tr data-domain="Data" data-CGPA="9.1">
+                    <th scope="row">4</th>
+                    <td>Page</td>
+                    <td>Data Science</td>
+                    <td>9.1</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Block</button></td>
+                </tr>
+                <tr data-domain="SWE" data-CGPA="8.0">
+                    <th scope="row">5</th>
+                    <td>Linus</td>
+                    <td>Software Engineer</td>
+                    <td>8.0</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Block</button></td>
+                </tr>
+                <tr data-domain="Web" data-CGPA="1.2">
+                    <th scope="row">6</th>
+                    <td>Ronit</td>
+                    <td>Web Development</td>
+                    <td>1.2</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Block</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <h3 class="text-center mt-5">Summary</h3>
+    <h4 class="text-center  " style="background-color: black;color:white;">Recently placed</h4>
+
+    <div class="table-container" id="summaryTable">
+        <table class="table text-center my-3" id="studentsTable">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Sl. No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col dropdown">
+                        <span class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </span>
+                        <ul class="dropdown-menu domains">
+                            <li class="dropdown-item" data-showDomain="">All</li>
+                            <li class="dropdown-item" data-showDomain="Cyber">Cyber Security</li>
+                            <li class="dropdown-item" data-showDomain="Data">Data Science</li>
+                            <li class="dropdown-item" data-showDomain="SWE">Software Engineering</li>
+                            <li class="dropdown-item" data-showDomain="Web">Web Development</li>
+                        </ul>
+                    </th>
+                    <th scope="col dropdown"> <span class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CTC
+                        </span>
+                        <ul class="dropdown-menu CGPA">
+                            <li class="dropdown-item" data-showCGPA="9"> >= <span>9</span></li>
+                            <li class="dropdown-item" data-showCGPA="8"> >= <span>8</span></li>
+                            <li class="dropdown-item" data-showCGPA="7"> >= <span>7</span></li>
+                            <li class="dropdown-item" data-showCGPA="6"> >= <span>6</span></li>
+                            <li class="dropdown-item" data-showCGPA=""> >= <span>0</span></li>
+                        </ul>
+                    </th>
+                    <th scope="col">Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-domain="Cyber" data-CGPA="7.7">
+                    <th scope="row">1</th>
+                    <td>Aman</td>
+                    <td>Google</td>
+                    <td>7.7lac</td>
+                    <td><button type="button" class="btn btn-success d-inline">FrontEnd Developer</button></td>
+                </tr>
+                <tr data-domain="Web" data-CGPA="8.1">
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Amazon</td>
+                    <td>8.1 lac</td>
+                    <td><button type="button" class="btn btn-danger d-inline">BackEnd Developer</button></td>
+                </tr>
+                <tr data-domain="Data" data-CGPA="9.0">
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>Flipkart</td>
+                    <td>7 lac</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Software Developer</button></td>
+                </tr>
+                <tr data-domain="Data" data-CGPA="9.1">
+                    <th scope="row">4</th>
+                    <td>pekis</td>
+                    <td>Wipro</td>
+                    <td>9.1 lac</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Full stack Developer</button></td>
+                </tr>
+                <tr data-domain="SWE" data-CGPA="8.0">
+                    <th scope="row">5</th>
+                    <td>Linus</td>
+                    <td>Cognizant</td>
+                    <td>5.0 lac</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Hardware Developer</button></td>
+                </tr>
+                <tr data-domain="Web" data-CGPA="1.2">
+                    <th scope="row">6</th>
+                    <td>Ronit</td>
+                    <td>Tata</td>
+                    <td>6.4 lac</td>
+                    <td><button type="button" class="btn btn-danger d-inline">Data scientist</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        &copy; Chirag Khatri
+    </footer>
+
+
+
+    <script>
+        let blockBtns = document.querySelectorAll('#studentsTable button');
+
+
+        blockBtns.forEach(button => {
+            button.addEventListener('click', handleBlockBtn);
+        });
+
+
+        function handleBlockBtn() {
+            if (this.classList.contains('btn-success')) {
+                this.classList.replace('btn-success', 'btn-danger');
+                this.textContent = 'Block';
+            }
+            else {
+                this.classList.replace('btn-danger', 'btn-success');
+                this.textContent = 'Unblock';
+            }
+
+        }
+
+        const dropdownDomainOptions = document.querySelectorAll('#studentsTable .domains .dropdown-item')
+        const dropdownCGPAOptions = document.querySelectorAll('#studentsTable .CGPA .dropdown-item');
+
+        dropdownDomainOptions.forEach((option) => {
+            option.addEventListener('click', showDomains)
+        })
+
+        dropdownCGPAOptions.forEach((option) => {
+            option.addEventListener('click', showCGPA)
+        })
+
+        // TODO: Try to Improve Logic i.e show web dev domains after cyber
+        let studentsData = document.querySelectorAll('#studentsTable tbody tr');
+        function showDomains() {
+            let showDomain = this.dataset.showdomain;
+            studentsData.forEach((student) => {
+                if (student.dataset.domain != showDomain) {
+                    student.style.display = 'none';
+                }
+                if (showDomain == '' || student.dataset.domain == showDomain) {
+                    student.style.display = ''
+                }
+            })
+
+        }
+
+        function showCGPA() {
+            let showCGPA = this.dataset.showcgpa;
+            studentsData.forEach((student) => {
+                if (student.dataset.cgpa < showCGPA)
+                    student.style.display = 'none';
+                if (student.dataset.cgpa >= showCGPA)
+                    student.style.display = '';
+            })
+        }
+
+
+        const btnRegister = document.querySelector('#staticBackdrop2 .btnRegister')
+        btnRegister.addEventListener('click', () => {
+            btnRegister.textContent = 'Registered';
+            btnRegister.classList.replace('btn-primary', 'btn-success')
+        })
+
+
+        const drivesTableBody = document.querySelector('#drivesTable tbody');
+
+        function createDrive() {
+            let sl = Number(document.querySelector('#drivesTable tbody tr:last-child th').textContent)
+            let companyName = document.querySelector('#companyName').value;
+            let driveDate = document.querySelector('#driveDate').value;
+            let driveLastDate = document.querySelector('#driveLastDate').value;
+            let jobProfileLink = document.querySelector('#jobProfileLink').value;
+
+            let newDrive = document.createElement('tr');
+            newDrive.innerHTML = `<th scope="row">${++sl}</th>
+                    <td>${companyName}</td>
+                    <td>${driveDate}</td>
+                    <td>${driveLastDate}</td>
+                    <td><a type="button" href=${jobProfileLink} class="btn btn-primary d-inline">Job Profile</a></td>
+                    <td><button type="button" class="btn btn-success d-inline" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">Register</button></td>`
+
+            drivesTableBody.insertAdjacentElement('beforeend', newDrive);
+
+        }
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

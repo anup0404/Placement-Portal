@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}   
+#container {
+    font-family: Arial,Helvetica,sans-serif;
+}
+div {
+    display: block;
+}
+body {
+    
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 11px;
+    color: #666;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+nav a {
+    color: white !important;
+}
+.head {
+    border: 1px solid black;
+    background-color: steelblue;
+    padding-top: 13px;
+    position: sticky;
+    top: 0;
+}
+
+.right {
+    color: white;
+    font-weight: bolder;
+    padding-left: 26%;
+}
+
+.logout {
+    padding-left: 40px;
+}
+
+
+
+.fa-solid {
+    padding-left: 10px;
+}
+
+
+.center {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 40%;
+}
+
+
+.profile {
+
+    width: 409px;
+}
+
+.flex {
+    display: flex;
+    /*  border: 1px solid black;*/
+}
+
+.personal-info {
+    /* float: left; */
+    margin-left: 10px;
+    /* width: 400px; */
+    margin-bottom: 15px;
+    border: 1px solid #d1cfcf;
+    margin-top: 17px;
+    flex-basis: 50%;
+}
+.personal-info li {
+    font-size: 11px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #efefef;
+    color: #666;
+    background: url(../../imgs/tabel_grid_white.jpg) repeat-x top #f9f9f9;
+    border-bottom: 1px solid #d1cfcf;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+.personal-info li span {
+    color: #666;
+    float: right;
+    line-height: 22px;
+    width: 62%;
+}
+.personal-info li label {
+    background-color: #999;
+    color: #fff;
+    float: left;
+    line-height: 22px;
+    padding-left: 7px;
+    font-weight: 700;
+    width: 135px;
+}
+label {
+    cursor: default;
+}
+
+#profile {
+    background-position: center bottom,left top;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    border-bottom: 1px solid #d1cfcf;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#profile .grid {
+    display: flex;
+}
+@media (max-width:792px) {
+    #profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile .grid {
+        flex-direction: column;
+    }
+}
+.about h1 {
+    color: #933;
+    font-family: avantgarde_bk_btbook;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin: 10px 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+img {
+    border: none;
+    width: 224px;
+    aspect-ratio: auto 224 / 131;
+    height: 131px;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.grid {
+    float: left!important;
+}
+.about {
+    float: left;
+    margin-left: 18px;
+    margin-top: 17px;
+    width: 135px;
+}
+.about .photo-inner img {
+    background-color: #fff;
+    height: 140px;
+    width: 120px;
+}
+#header {
+    width: 100%;
+    float: left;
+    position: relative;
+    background: url(../../imgs/header_bg.jpg) center top no-repeat #fff;
+    height: 130px;
+}
+.form_header {
+    /* background: linear-gradient(to bottom,#088edb 0%,#061177 100%) repeat scroll 0 0 transparent; */
+    background-color: #212529;
+
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 12px!important;
+    font-weight: 700;
+    height: 25px;
+    line-height: 25px!important;
+    padding: 5px;
+    width: 95%;
+    text-align: center;
+    margin-right: 21.5px;
+    text-transform: none;
+}
+.placement_ums_new_div {
+    width: 98%;
+    margin-left: 18px;
+    float: left;
+}
+.placement_ums_new_div {
+    width: 98%;
+    margin: 0 auto;
+}
+.placement_ums_new_div {
+    margin-left: 18px;
+}
+.new_border .job-offer {
+    padding: 10px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.new_border {
+    border: 1px solid #d1cfcf;
+    line-height: 20px;
+}
+.aspGridView td {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.aspGridView td {
+    border-bottom: 1px solid #d1cfcf!important;
+    border-right: 1px solid #d1cfcf!important;
+    padding-left: 7px;
+    padding-right: 4px;
+}
+.aspGridView_RowStyle {
+    background: url(../../imgs/tabel_grid_white.jpg) repeat-x scroll center top #f9f9f9;
+    border-bottom: 1px solid #d1cfcf!important;
+    border-right: 1px solid #d1cfcf!important;
+    color: #333;
+    font-size: 11px;
+    line-height: 25px;
+    min-height: 25px!important;
+    padding-left: 10px;
+    text-align: left;
+}
+.category_heading {
+    height: 30px;
+    text-align: left;
+    color: #585454;
+    font-size: 11px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-right: 1px solid #d1cfcf;
+    border-bottom: 1px solid #d1cfcf;
+    background: #f9f9f9;
+    background: url(../../imgs/category_heading_bg.jpg) repeat-x top #f9f9f9;
+    font-weight: 700;
+}
+.placement_ums_new_div {
+    width: 98%;
+    margin-left: 18px;
+    float: left;
+}
+.placement_ums_new_div {
+    width: 100%;
+    margin: 0 auto;
+}
+.main_table12 tr td {
+    text-align: center !important;
+}
+.tabel_grid_white td {
+    padding-left: 10px;
+    border-right: 1px solid #d1cfcf;
+    border-bottom: 1px solid #d1cfcf;
+}
+.tabel_grid_white {
+    text-align: left;
+    font-size: 11px;
+    line-height: 25px;
+    height: 25px;
+    padding-left: 10px;
+    color: #666;
+    background: url(../../imgs/tabel_grid_white.jpg) repeat-x top #f9f9f9;
+    border-right: 1px solid #d1cfcf;
+    border-bottom: 1px solid #d1cfcf;
+}
+
+
+#studentDrives a {
+    color: white;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+
+#summaryTable {
+    height: 300px;
+    overflow: hidden;
+}
+#summaryTable table {
+    animation: scroll infinite 15s;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+#studentDrives {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+.left-section {
+    width: 40%;
+    margin-left: 18px;
+}
+
+.right-section {
+    width: 58%;
+}
+@media screen and (max-width: 600px) {
+    .left-section {
+        width: 100%;
+        margin-left: 0  ;
+    }
+    ul {
+        padding-left: 0;
+    }
+    #studentDrives {
+        display: block;
+        overflow-x: scroll;
+    }
+    .personal-info {
+        padding-left: 0;
+    }
+    .right-section {
+        width: 100%;
+    }
+}

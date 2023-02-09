@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Placement portal.</h1>
+				<p>We are Vertos.We can do it and we will #Think Big</p>
+				<img src="./images/placed.jpg">
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5>Login</h5>
+			<div class="inputs">
+				<input type="text" placeholder="User Id" name="userId">
+				<br>
+				<input type="password" placeholder="password" name="password">
+			</div>
+			
+			<br><br>
+			
+			<div class="remember-me--forget-password">
+				
+				<label>
+					<input type="checkbox" name="item" checked />
+					<span class="text-checkbox">Remember me</span>
+				</label>
+				<p>forget password?</p>
+			</div>
+			
+			<br>
+			<!-- <a href="1stpage.html"> <input type="submit" value="Login" id="login"></a> -->
+			<button id="login">Login</button>
+
+			<p style="visibility: hidden;">Don't have an account? Create Your Account it takes less than a minute</p>
+		</div>
+
+	</div>
+
+	<footer>
+		&copy; Chirag Khatri
+	</footer>
+
+	<script>
+		function handleLogin() {
+			let user = document.querySelector('input[name="userId"]').value
+			console.log(user)
+			if(user=='admin') 
+				window.location.href='./admin.html'
+			else if(user == '')
+				alert("Enter User Id");
+			else
+				window.location.href="./student.html"
+		}
+		
+		const loginBtn = document.getElementById('login');
+		loginBtn.addEventListener('click', handleLogin)
+		
+		
+	</script>
+	
+
+</body>
+
+</html>
